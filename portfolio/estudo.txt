@@ -1,0 +1,14 @@
+react - biblioteca (porque? não impoem uma obrigação, nos permite criar o que quiser
+trabalha com implementação de interface
+
+create react App (configuração necessarias ja definidas)
+
+ou
+
+vite (configuração necessarias ja definidas) - é mais rapido
+
+REACT é SPA (SIngle Page Application)
+
+ReactDOM - permite malipular o dom (raiz)
+
+jsx - sintaxe para criar interface para o react (tudo é função)
