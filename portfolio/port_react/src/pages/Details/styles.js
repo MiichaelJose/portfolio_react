@@ -4,4 +4,33 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
+
+    display: flex;
+`;
+
+export const Content = styled.div`
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: scroll;
+`;
+
+export const BoxFlex = styled.div`
+    display: flex;
+    align-items: center;
+
+    text-align: ${(props) => props.aligntext !== "right" ? "left" : props.aligntext };
+
+    > img {
+        width: 80px;
+        height: 80px;
+    }
+
+    > p {
+        margin-left: ${(props) => props.margintext !== "" ? props.margintext : ""};
+    }
 `;

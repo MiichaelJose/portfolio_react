@@ -7,6 +7,10 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    p {
+        font-size: 16px;
+    }
+
     a {
         text-decoration: none;
     }
@@ -14,8 +18,8 @@ export default createGlobalStyle`
     h1 {
         font-family: 'Fjalla One', sans-serif;
     }
-
-    a, p, button {
+    
+    a, p, button, h2 {
         font-family: 'Nunito Sans', sans-serif;
     }
 
