@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
+import imgBackHeader from '../../images/main-img.jpg';
+
 export const Container = styled.header`
     width: 50%;
     height: 100%;
 
-    background-image: url("../../../images/main-img.jpg");
+    background-image: url(${ imgBackHeader });
     background-position: center;
     background-size: cover;
     background-color: red;
@@ -43,6 +45,17 @@ export const Content = styled.div`
         a {
             display: flex;
             align-items: center;
+
+            &:hover {
+                > p {
+                    font-size: 1.5rem;
+                }
+
+                > img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
         }
 
         img {

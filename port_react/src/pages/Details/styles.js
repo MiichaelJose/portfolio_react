@@ -30,7 +30,34 @@ export const BoxFlex = styled.div`
         height: 80px;
     }
 
+    > div > p {
+        margin-left: ${(props) => props.margintext != "" ? props.margintext : "0px"};
+    }
+`;
+
+export const BoxColumnText = styled.div`
+    width: 100%;
+    height: 35px;
+
+    border-bottom: 1px solid black;
+    padding-inline: 15px;
+
     > p {
-        margin-left: ${(props) => props.margintext !== "" ? props.margintext : ""};
+        line-height: 2rem;
+    }
+`;
+
+export const BoxSkills = styled.div`
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    flex-wrap: wrap;
+
+    display: flex;
+    justify-content: space-around;
+
+    > img {
+        width: 45px;
+        height: 45px;
     }
 `;
