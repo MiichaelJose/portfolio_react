@@ -2,8 +2,7 @@
 .swiper {
     width: 100%;
     height: 100%;
-
-    padding: 60px;
+    padding-bottom: 40px;
 }
 
 .swiper-slide {
@@ -19,18 +18,20 @@
 .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
+
+    background-color: lightgray;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: black;
+    background-color: white;
 }
 
 .swiper-button-prev {
-    color: green;
+    color: white;
 }
 
 .swiper-button-next {
-    color: green;
+    color: white;
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {

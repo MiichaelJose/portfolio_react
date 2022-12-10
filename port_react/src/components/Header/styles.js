@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import imgBackHeader from '../../images/main-img.jpg';
+import imgBackHeader from '../../assets/ImgsDetails/main-img.jpg';
 
 export const Container = styled.header`
     width: 50%;

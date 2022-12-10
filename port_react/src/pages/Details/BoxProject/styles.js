@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
     width: 100%;
-    max-width: 450px;   
+    max-width: 350px;   
     height: 450px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -16,6 +16,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: white;
 `;
 
 export const SpaceImg = styled.div`

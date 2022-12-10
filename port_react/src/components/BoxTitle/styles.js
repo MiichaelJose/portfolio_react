@@ -11,17 +11,16 @@ export const Container = styled.div`
         padding: 15px;
     }
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
+    
 `;
+//box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
 
 export const Header = styled.div`
-    //padding-left: 25px;
     margin-bottom: 10px;
 
     background-color: ${(props) => `${props.backgroundcolor}`};
 
     > h2 {
         color: white;
-        font-size: 30px;
     }
 `;

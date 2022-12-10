@@ -1,17 +1,47 @@
-import { Container } from './styles';
+import { Container, Content } from './styles';
 
 import { Header } from '../../components/Header';
 
 import { useParams } from 'react-router-dom';
+import { useTheme } from 'styled-components';
+
+import { Button } from '../../components/Button';
+import { Chamado } from './Chamado';
 
 export function Projects() {
-    const paramentros = useParams();
+    const theme = useTheme();
+    const { id } = useParams();
 
-    console.log(paramentros.id);
+    function controller() {
+        switch (id) {
+            case 'chamado':
+                    return chamado();
+                break;
+            default:
+                break;
+        }
+    }
 
-    return(
-        <Container>
-            <Header />
-        </Container>
+    function color() {
+        switch (id) {
+            case 'chamado':
+                    return theme.COLORS.PURPLE_BOLD;
+                break;
+            default:
+                break;
+        }
+    }
+
+    function chamado() {
+        return(
+            <Chamado />
+        );
+    }
+
+    return (
+      <Container>
+        <Header />
+        <Content backgroundcolor={color()}>{controller()}</Content>
+      </Container>
     );
 }

@@ -11,7 +11,7 @@ import {
 
 import { Header } from "../../components/Header";
 import { BoxTitle } from "../../components/BoxTitle";
-import { BoxProject } from "../../components/BoxProject";
+import { BoxProject } from "./BoxProject";
 
 // pegar o theme e utilizar fora de componentes estilizados
 import { useTheme } from "styled-components";
@@ -22,7 +22,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Swiper.css";
 
-import images from "../../images/images";
+import images from "../../assets/images";
 
 // Componente
 export function Details() {
@@ -75,16 +75,16 @@ export function Details() {
             <img src={images.imgMobile} alt="img mobile" />
           </BoxFlex>
         </BoxTitle>
-        <BoxTitle title={"Projetos"} backcolor={theme.COLORS.GREEN}>
+        <BoxTitle title={"Projetos"} backcolor={theme.COLORS.ORANGE_BOLD}>
           <Swiper
-            slidesPerView={"auto"}
+            slidesPerView={1}
             spaceBetween={30}
             navigation={true}
             pagination={{ clickable: true }}
             modules={[Navigation, Pagination]}
           >
             <SwiperSlide>
-              <BoxProject srcimg={images.imgBancoDigital} id={1}></BoxProject>
+              <BoxProject srcimg={images.imgBancoDigital} id={'chamado'}></BoxProject>
             </SwiperSlide>
             <SwiperSlide>
               <BoxProject srcimg={images.imgHelpDesk} id={2}></BoxProject>

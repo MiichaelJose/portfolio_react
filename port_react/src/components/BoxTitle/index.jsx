@@ -3,11 +3,11 @@ import { Container, Header } from './styles';
 export function BoxTitle({ title, backcolor, children }) {
     return (
         <Container>
-            <Header  backgroundcolor={ backcolor }>
+            <Header backgroundcolor={ backcolor }>
                 <h2>{ title }</h2>
             </Header>
             <div>
-                {children}
+                { children }
             </div>
         </Container>
     )

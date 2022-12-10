@@ -1,7 +1,5 @@
 import { Container, SpaceImg, Button }  from './styles';
 
-import { Link } from 'react-router-dom';
-
 export function BoxProject({ srcimg, id }) {
     return(
         <Container>

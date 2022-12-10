@@ -1,6 +1,6 @@
 import { Container, Content } from "./styles";
 
-import images from "../../images/images";
+import images from "../../assets/images";
 
 export function Header() {
   return (
