@@ -84,16 +84,10 @@ export function Details() {
             modules={[Navigation, Pagination]}
           >
             <SwiperSlide>
-              <BoxProject srcimg={images.imgBancoDigital} id={'chamado'}></BoxProject>
+              <BoxProject srcimg={images.mainChamado} id={'chamado'}></BoxProject>
             </SwiperSlide>
             <SwiperSlide>
-              <BoxProject srcimg={images.imgHelpDesk} id={2}></BoxProject>
-            </SwiperSlide>
-            <SwiperSlide>
-              <BoxProject srcimg={images.imgBancoDigital}></BoxProject>
-            </SwiperSlide>
-            <SwiperSlide>
-              <BoxProject srcimg={images.imgHelpDesk}></BoxProject>
+              <BoxProject srcimg={images.imgHelpDesk} id={'helpdesk'}></BoxProject>
             </SwiperSlide>
           </Swiper>
         </BoxTitle>

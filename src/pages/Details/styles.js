@@ -55,7 +55,7 @@ export const BoxSkills = styled.div`
 
     display: flex;
     justify-content: space-around;
-
+    background-color: white;
     > img {
         width: 45px;
         height: 45px;

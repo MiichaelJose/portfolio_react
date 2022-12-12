@@ -9,12 +9,14 @@ import {
   SectionEstruturaBackEnd,
   SectionEstruturaFrontEnd,
   SectionEstruturaMobile,
-  BoxEstruturaLinks
+  BoxEstruturaLinks,
 } from "./styles";
 
 import images from "../../../assets/images.js";
 
 export function Chamado() {
+  const github = 'https://github.com/MiichaelJose/_front_back_java_react-native_/tree/main/';
+
   return (
     <Container>
       <Header>
@@ -26,11 +28,10 @@ export function Chamado() {
         <LinksBottomHeader>
           <Button href={"#backend"}>backend</Button>
           <Button href={"#frontend"}>frontend</Button>
+          <Button href={"#mobile"}>mobile</Button>
         </LinksBottomHeader>
       </Header>
-
       <ImgContent src={images.mainChamado} />
-
       <SectionSobre id="backend">
         <h1>SOBRE</h1>
         <p>
@@ -40,7 +41,6 @@ export function Chamado() {
           pedido análisado e aceito, criasse um chamado.
         </p>
       </SectionSobre>
-
       <SectionEstruturaBackEnd id="frontend">
         <h1>ESTRUTURA</h1>
         <div>
@@ -56,11 +56,12 @@ export function Chamado() {
               conta da sua estrutura mvc e recursos que agiliza o
               desenvolvimento, como por exemplo o spring data jpa.
             </p>
-            <Button>link github</Button>
+            <Button href={github+'backend_chamado'} target={"_blank"}>
+              <p>link back</p> <img src={images.imgGithub} alt="img github" />
+            </Button>
           </div>
         </div>
       </SectionEstruturaBackEnd>
-
       <SectionEstruturaFrontEnd>
         <h3>FRONTEND</h3>
         <div>
@@ -78,16 +79,23 @@ export function Chamado() {
           de um serviço especifico. para esse acesso temos a opção de utilizar o
           qr code assim visualizar no dispositivo móvel.
         </p>
-        <Button>link front</Button>
+        <Button href={github+'frontend_chamado'} target={"_blank"}>
+          <p>link front</p> <img src={images.imgGithub} alt="img github" />
+        </Button>
       </SectionEstruturaFrontEnd>
-
-      <SectionEstruturaMobile>
+      <SectionEstruturaMobile id="mobile">
         <h3>MOBILE</h3>
         <div>
-          <img src={images.loginChamadoMobile} alt="" />
-          <img src={images.listarChamadoMobile} alt="" />
-          <img src={images.qrcodeChamadoMobile} alt="" />
-          <img src={images.chamadoMobile} alt="" />
+          <img src={images.loginChamadoMobile} alt="img login mobile" />
+          <img
+            src={images.listarChamadoMobile}
+            alt="img listar chamado mobile"
+          />
+          <img
+            src={images.qrcodeChamadoMobile}
+            alt="img qrcode chamado mobile"
+          />
+          <img src={images.chamadoMobile} alt="img chamado mobile" />
         </div>
         <p>
           Desenvolvido utilizando html, css e javascript. Interface para o
@@ -98,15 +106,16 @@ export function Chamado() {
           qr code assim visualizar no dispositivo móvel.
         </p>
         <BoxEstruturaLinks>
-            <Button>link mobile</Button>
+          <Button href={github+'mobile_chamado'} target={"_blank"}>
+            <p>link mobile</p> <img src={images.imgGithub} alt="img github" />
+          </Button>
 
-            <div>
-                <Button href={'#backend'}>backend</Button>
-                <Button href={'#frontend'}>frontend</Button>
-                <Button href={'/'}>voltar</Button>
-            </div>
+          <div>
+            <Button href={"#backend"}>backend </Button>
+            <Button href={"#frontend"}>frontend</Button>
+            <Button href={"/"}>voltar</Button>
+          </div>
         </BoxEstruturaLinks>
-        
       </SectionEstruturaMobile>
     </Container>
   );

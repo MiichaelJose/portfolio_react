@@ -40,9 +40,16 @@ import qrcodeChamadoMobile from "./ImgsProjects/qrcode-mobile-chamado.png";
 import listarChamadoMobile from "./ImgsProjects/listar-mobile-chamado.png";
 import chamadoMobile from "./ImgsProjects/chamado-mobile-chamado.png";
 
+import mainHelpdesk from "./ImgsProjects/main-helpdesk.png";
+import estruturaHelpdesk from "./ImgsProjects/estrutura-helpdesk.png"
+
+import imgGithub from "./ImgsProjects/github.png"
 
 
 export default {
+  mainHelpdesk,
+  estruturaHelpdesk,
+  imgGithub,
   loginChamadoMobile,
   qrcodeChamadoMobile,
   listarChamadoMobile,

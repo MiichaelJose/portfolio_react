@@ -17,7 +17,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
 
-    background-color: white;
+    background-color: gray;
 `;
 
 export const SpaceImg = styled.div`
@@ -44,8 +44,12 @@ export const Button = styled(Link)`
     text-align: center;
     line-height: 50px;
     font-weight: bold;
-
+    background-color: white;
     border-radius: 20px;
     margin: 15px 0;
     border: 3px solid lightgray;
+
+    > p {
+        color: black;
+    }
 `;

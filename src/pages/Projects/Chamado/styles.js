@@ -31,6 +31,7 @@ export const LinksTopHeader = styled.div`
 export const LinksBottomHeader = styled.div`
     display: flex;
     flex-direction: row;
+    width: 50%;
 `;
 
 export const ImgContent = styled.img`
@@ -68,7 +69,7 @@ export const SectionEstruturaBackEnd = styled.div`
     > div {
         display: flex;
     
-        img {
+        > img {
             width: 150px;
             height: 250px;
         
@@ -80,14 +81,14 @@ export const SectionEstruturaBackEnd = styled.div`
             }
         }
         
-        div {
+        > div {
             margin-left: 10px;
             
-            h3 {
+            > h3 {
                 margin-bottom: 25px;
             }
             
-            p {
+            > p {
                 margin-bottom: 25px;
             }
         }
@@ -107,7 +108,7 @@ export const SectionEstruturaFrontEnd = styled.div`
         justify-content: space-between;
         margin-bottom: 25px;
 
-        img {
+        > img {
             width: 200px;
         
             :hover {
@@ -124,12 +125,18 @@ export const SectionEstruturaFrontEnd = styled.div`
 `;
 
 export const SectionEstruturaMobile = styled.div`
-    h3, p, div {
+    > h3 {
+        margin-bottom: 25px;
+    }
+
+    > p {
         margin-bottom: 25px;
     }
 
     > div {
-        img {
+        margin-bottom: 25px;
+
+        > img {
             width: 200px;
 
             :hover {
@@ -146,7 +153,7 @@ export const BoxEstruturaLinks = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    div {
+    > div {
         width: 50%;
         display: flex;
         justify-content: space-around;

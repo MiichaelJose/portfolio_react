@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
-import { Link } from "react-router-dom";
-
 export const Container = styled.a`
-    width: 80px;
-    height: 35px;
+    width: fit-content;
+    max-width: 150px;
+    height: 35px;    
 
-    margin-top: 5px;
-    border-radius: 25px;
-
+    border-radius: 15px;
+    padding-inline: 15px;
+    
     background-color: white;
     
     justify-content: center;
@@ -19,5 +18,11 @@ export const Container = styled.a`
 
     > p {
         color: black;
+    }
+
+    > img {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
     }
 `;
